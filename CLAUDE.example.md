@@ -47,6 +47,7 @@ supposent souvent un stack moderne — ignore leurs prérequis d'outillage quand
 | Stratégie de hook short-form, quelle scène tourner et pourquoi | `viral-hooks` |
 | Écrire le prompt exact pour un modèle Higgsfield / Seedance / Kling / Veo | `higgsfield` |
 | Décortiquer une vidéo existante, ou noter ses propres rushes | `video-teardown` |
+| Refaire une vidéo en changeant le personnage, la tenue, le produit, le décor | `genjutsu` |
 | Algo, formats, specs et calendrier organique par réseau | `social-platforms` |
 
 **Vendre**
@@ -72,6 +73,8 @@ supposent souvent un stack moderne — ignore leurs prérequis d'outillage quand
 Quand deux skills semblent convenir :
 
 - **`viral-hooks` décide quoi filmer, `higgsfield` écrit le prompt** pour le modèle visé.
+- **`higgsfield` crée une vidéo de zéro, `genjutsu` transforme une vidéo qui existe déjà.**
+  Décliner un UGC avec dix visages, c'est `genjutsu`.
 - **`cinematic-web` décide quoi animer, `threejs` écrit le code** ; `webgpu-threejs-tsl` seulement
   si on est en WebGPU / TSL.
 - Sur une créa publicitaire, l'ordre est : **`creative-strategy` fixe l'angle et la mécanique,

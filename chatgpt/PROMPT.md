@@ -6,7 +6,7 @@ comment arbitrer entre les skills, et où sont leurs limites.
 
 ---
 
-Je viens de téléverser sept Skills dans ChatGPT. Ils viennent de ma configuration Claude Code et
+Je viens de téléverser huit Skills dans ChatGPT. Ils viennent de ma configuration Claude Code et
 utilisent le format `SKILL.md`. Voilà comment je veux que tu t'en serves.
 
 **Mon contexte.** Je construis des boutiques e-commerce en HTML/CSS/JS statique, sans build ni
@@ -19,7 +19,8 @@ scripts sont en Python sur un VPS.
 
 | Skill | Quand l'utiliser |
 |---|---|
-| `higgsfield` | Écrire ou corriger un prompt pour un modèle vidéo ou image. Les paramètres viennent d'un instantané daté de l'API, pas de ta mémoire. |
+| `higgsfield` | Écrire ou corriger un prompt pour un modèle vidéo ou image, à partir de rien. Les paramètres viennent d'un instantané daté de l'API, pas de ta mémoire. |
+| `genjutsu` | Transformer une vidéo qui existe déjà : changer le personnage, la tenue, le produit, le décor. |
 | `social-platforms` | Mécaniques d'algorithme et specs de format 2026 pour TikTok, Instagram, YouTube, Facebook, LinkedIn. |
 | `creative-strategy` | Construire un concept de pub : angle → mécanique → format → hook. |
 | `media-buying` | Stratégie Meta Ads : attribution, budget, phase d'apprentissage, retargeting, saisonnalité. |

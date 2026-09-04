@@ -4,7 +4,7 @@ Une configuration Claude Code curée pour construire et vendre des sites e-comme
 front et 3D, créa vidéo IA, publicité payante, SEO, réseaux sociaux.
 
 `install.sh` récupère chaque skill tiers **à sa source d'origine**. Rien n'est redistribué ici,
-sauf les quatre skills écrits pour ce dépôt.
+sauf les cinq skills écrits pour ce dépôt.
 
 ```bash
 git clone https://github.com/<compte>/claude-setup.git
@@ -26,6 +26,7 @@ bash install.sh
 | `video-teardown` | Décortiquer une vidéo plan par plan : frames, texte à l'écran, transcription horodatée, rythme de montage, notation des plans. Deux passes (planche-contact puis frames ciblées) pour ne pas payer 40 images. |
 | `media-buying` | Stratégie payante : phase d'apprentissage, attribution 2026, volume créatif sous Andromeda, retargeting, fatigue, saisonnalité, checkout WhatsApp. |
 | `social-platforms` | Routeur vers les mécaniques d'algorithme 2026 des cinq réseaux. |
+| `genjutsu` | Refaire une vidéo en changeant le personnage, la tenue, le produit ou le décor, via Higgsfield Genjutsu. Surface d'API vérifiée sur le connecteur, pas recopiée d'une page marketing. |
 | `creative-strategy` | Routeur vers la bibliothèque de stratégie créative de Motion. |
 
 Les deux routeurs existent pour une raison précise : les sources d'origine feraient 35 et 8 skills,
@@ -52,7 +53,7 @@ savoir se chargent à la demande.
 
 ---
 
-## Trois décisions à connaître
+## Trois écarts assumés par rapport aux sources
 
 **`netlify-skills` est réduit de 15 skills à 4.** Le plugin coûte ~3 150 tokens en permanence pour
 quinze skills dont onze — identity, blobs, database, agent-runner, access-control — ne servent

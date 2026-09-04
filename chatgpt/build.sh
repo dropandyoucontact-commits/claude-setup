@@ -6,7 +6,7 @@ S="${CLAUDE_SKILLS_DIR:-$HOME/.claude/skills}"
 OUT="$(cd "$(dirname "$0")" && pwd)"
 STAGE=$(mktemp -d); trap 'rm -rf "$STAGE"' EXIT
 
-for s in social-platforms creative-strategy copychief ad-copy cro-audit higgsfield media-buying; do
+for s in social-platforms creative-strategy copychief ad-copy cro-audit higgsfield genjutsu media-buying; do
   [ -d "$S/$s" ] || { echo "absent, ignoré : $s"; continue; }
   cp -R "$S/$s" "$STAGE/$s"
 done
