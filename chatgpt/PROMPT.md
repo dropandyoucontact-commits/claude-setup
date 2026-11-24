@@ -6,7 +6,7 @@ comment arbitrer entre les skills, et où sont leurs limites.
 
 ---
 
-Je viens de téléverser huit Skills dans ChatGPT. Ils viennent de ma configuration Claude Code et
+Je viens de téléverser douze Skills dans ChatGPT. Ils viennent de ma configuration Claude Code et
 utilisent le format `SKILL.md`. Voilà comment je veux que tu t'en serves.
 
 **Mon contexte.** Je construis des boutiques e-commerce en HTML/CSS/JS statique, sans build ni
@@ -27,12 +27,24 @@ scripts sont en Python sur un VPS.
 | `cro-audit` | Diagnostiquer une page qui ne convertit pas. |
 | `copychief` | Relire et durcir de la copy existante. |
 | `ad-copy` | Écrire le texte d'une annonce Meta. |
+| `scenario-court` | Écrire ce qui se passe et ce qui se dit : sketch, scène de ménage, court de 60 s, épisode 1 d'un micro-drame vertical, dialogue qui ne s'explique pas. |
+| `mise-en-scene` | Décider où est la caméra et dans quel ordre viennent les plans : échelle, axe des 180°, couverture d'un dialogue, lumière qui ne change pas d'un plan à l'autre. |
+| `anatomie-pub` | La structure chronométrée d'un spot : à quelle seconde le produit entre, où tombe la marque, pourquoi une pub drôle vend, dix-huit campagnes réelles décryptées. |
+| `jt-satirique` | Écrire un JT satirique vertical et tenir le rendez-vous quotidien : grille du segment, blague de titre, invité fictif, bible du média. |
 
 **Comment arbitrer quand plusieurs semblent convenir.**
 
 - Une créa publicitaire se construit dans cet ordre : `creative-strategy` fixe l'angle et la
-  mécanique, `ad-copy` écrit le texte, `higgsfield` écrit le prompt du modèle vidéo,
-  `copychief` relit à la fin. Ne saute pas d'étape et ne fais pas les quatre d'un coup.
+  mécanique, `anatomie-pub` fixe la structure chronométrée et la seconde où le produit entre,
+  `scenario-court` écrit ce qui se passe et ce qui se dit, `mise-en-scene` décide les plans,
+  `higgsfield` écrit le prompt du modèle, `ad-copy` écrit le texte de l'annonce, `copychief`
+  relit à la fin. Ne saute pas d'étape et ne fais pas les sept d'un coup.
+- Pour une vidéo qui n'est pas une pub : `scenario-court` écrit, `mise-en-scene` découpe,
+  `higgsfield` prompte. Ne saute jamais `mise-en-scene` au-delà de trois plans — c'est ce qui
+  distingue une vidéo construite d'une vidéo faite à la volée.
+- Dès qu'une actualité réelle est dans la vidéo, c'est `jt-satirique`, pas `scenario-court`.
+- `anatomie-pub` répond « à quelle seconde montrer le produit », `creative-strategy` répond
+  « quel angle ». Ne les confonds pas : le premier chronomètre, le second positionne.
 - Sur une URL : `cro-audit` si la question est « est-ce que ça vend ». Le référencement n'est pas
   couvert par ces skills.
 - Publication organique sur un réseau → `social-platforms`. Dès qu'il y a un budget derrière →
@@ -54,6 +66,17 @@ passer une hypothèse pour un diagnostic.
 
 Enfin, **distingue ce qui est sourcé de ce qui est une heuristique.** Les skills marquent la
 différence, garde-la dans tes réponses.
+
+**Sur les quatre skills de réalisation.** Ils portent chacun un `SOURCES.md` qui dit d'où vient
+chaque règle, avec sa licence, et qui marque les chiffres sans source primaire. Respecte cette
+distinction : ne présente pas une convention d'auteur comme une mesure. L'un d'eux reprend la
+bibliothèque de campagnes de Serge Shima sous CC BY 4.0, dont la licence impose de garder la ligne
+d'attribution — ne la retire pas si tu réutilises ces fiches.
+
+Ces quatre skills renvoient parfois à des skills que tu n'as pas ici (`viral-hooks` pour les
+leviers d'attention des trois premières secondes, `commercial-pipeline` pour les fiches de
+personnages et de décors, les sous-skills de `higgsfield` pour la direction de jeu). Quand ça
+arrive, fais l'étape toi-même en le disant, ne prétends pas avoir lu un fichier absent.
 
 **Deux limites à connaître.** `media-buying` a été écrit pour un environnement branché sur l'API
 Meta Ads ; ici tu ne l'as pas, et la section correspondante a été retirée. Et deux skills de ma

@@ -6,7 +6,8 @@ S="${CLAUDE_SKILLS_DIR:-$HOME/.claude/skills}"
 OUT="$(cd "$(dirname "$0")" && pwd)"
 STAGE=$(mktemp -d); trap 'rm -rf "$STAGE"' EXIT
 
-for s in social-platforms creative-strategy copychief ad-copy cro-audit higgsfield genjutsu media-buying; do
+for s in social-platforms creative-strategy copychief ad-copy cro-audit higgsfield genjutsu media-buying \
+         mise-en-scene scenario-court anatomie-pub jt-satirique; do
   [ -d "$S/$s" ] || { echo "absent, ignoré : $s"; continue; }
   cp -R "$S/$s" "$STAGE/$s"
 done
@@ -32,7 +33,9 @@ PY
 python3 - "$STAGE" <<'PY'
 import sys, os, re
 st = sys.argv[1]
-absent = ['viral-hooks','video-teardown','threejs','cinematic-web','meta-ads-ops','webgpu-threejs-tsl','seo-page']
+absent = ['viral-hooks','video-teardown','threejs','cinematic-web','meta-ads-ops','webgpu-threejs-tsl','seo-page',
+          'commercial-pipeline','documentary','cartoon-episodes','micro-motion','logo-design','frontend-design',
+          'higgsfield-acting','higgsfield-camera','higgsfield-cinema','higgsfield-shotlist-director']
 for d in sorted(os.listdir(st)):
     p = os.path.join(st, d, 'SKILL.md')
     if not os.path.isfile(p): continue

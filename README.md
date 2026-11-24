@@ -28,6 +28,17 @@ bash install.sh
 | `social-platforms` | Routeur vers les mécaniques d'algorithme 2026 des cinq réseaux. |
 | `genjutsu` | Refaire une vidéo en changeant le personnage, la tenue, le produit ou le décor, via Higgsfield Genjutsu. Surface d'API vérifiée sur le connecteur, pas recopiée d'une page marketing. |
 | `creative-strategy` | Routeur vers la bibliothèque de stratégie créative de Motion. |
+| `mise-en-scene` | Le découpage d'une scène : quel plan, dans quel ordre, à quelle distance et quelle hauteur, pour quelle intention. Échelle des plans et règle des deux crans, axe des 180°, règle des 30°, eyeline, couverture d'un dialogue à deux et à trois, lumière invariante entre plans, six séquences-types plan par plan, budget de mouvement. |
+| `scenario-court` | Écrire une fiction courte verticale qui tient jusqu'au bout : le turn de la scène, douze règles de dialogue avec avant/après, beat sheets chiffrés de 30 s à 3 min, micro-drame vertical (paliers payants, courbe de rythme, antagoniste), dix mécaniques comiques avec leur mode de panne. |
+| `anatomie-pub` | Structure chronométrée d'un spot : à quelle seconde le produit entre, où tombe la révélation de marque, pub d'humour et pub cinématique, dix-huit campagnes réelles décryptées plan par plan, douze principes de psychologie sourcés. |
+| `jt-satirique` | Écrire un JT satirique vertical de 60 à 90 s et tenir le rendez-vous : grille du segment seconde par seconde, huit mécaniques de la blague d'actualité, viser le pouvoir sans viser un groupe, show bible d'un média récurrent. |
+
+Les quatre skills de réalisation ajoutés le 23 novembre 2026 viennent d'une fouille de GitHub et
+des catalogues de skills : une quarantaine de `SKILL.md` lus dans leur contenu réel pour la caméra,
+autant pour le scénario, autant pour la publicité. Aucun paquet externe n'est installé tel quel —
+ce qui était bon a été traduit, recoupé puis réécrit pour la vidéo IA verticale. Les sources et
+leurs licences sont dans le `SOURCES.md` de chaque skill, et les chiffres sans source primaire y
+sont marqués comme tels.
 
 Les deux routeurs existent pour une raison précise : les sources d'origine feraient 35 et 8 skills,
 donc 43 descriptions chargées à chaque session. Regroupés, ils en coûtent 2, et les fichiers de
